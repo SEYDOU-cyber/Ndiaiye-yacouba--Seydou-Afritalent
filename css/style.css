@@ -1,0 +1,108 @@
+/* commit 1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;700&display=swap');
+
+
+:root{
+    --primary-color: blue;
+    --secondary-color: black;
+    --light-color: white;
+    --dark-color: black;
+    --main-font: 'Poppins', sans-serif;
+    --title-font: 'Roboto', sans-serif;
+    --spacing: 20px;
+}
+
+
+body{
+    font-family: var(--main-font);
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--title-font)
+}
+
+body{
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+}
+
+button{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    display: block;
+
+}
+
+/* header */
+a{
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+/* .navbar{
+    padding: 15px 30px;
+    background-color: white;
+}
+
+.navbar-brand{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-link{
+    color: var(--secondary-color);
+    margin-left: 15px;
+}
+
+.nav-link:hover{
+    color: var(--primary-color);
+} */
+
+.headdiv1{
+    padding-bottom: 8em;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-end;
+    justify-content: space-around;
+    background-color: #f2f4f5;
+}
+
+/* ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: var(--spacing);
+    justify-content: space-between;
+    text-align: end;
+} */
+
+.photos{
+    width: 4em;
+}
+
+
