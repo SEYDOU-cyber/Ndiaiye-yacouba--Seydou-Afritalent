@@ -48,39 +48,26 @@ img{
 }
 
 /* header */
+
+.container-fluid{
+    position: fixed;
+    padding-bottom: 1.7em;
+}
 a{
     text-decoration: none;
     list-style: none;
+    font-size: x-large;
 }
 li{
     text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: row;
-    
+     
 }
-/* .navbar{
-    padding: 15px 30px;
-    background-color: white;
-}
-
-.navbar-brand{
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.nav-link{
-    color: var(--secondary-color);
-    margin-left: 15px;
-}
-
-.nav-link:hover{
-    color: var(--primary-color);
-} */
 
 .headdiv1{
-    padding-bottom: 8em;
+    padding-bottom: 10em;
 }
 
 
@@ -104,5 +91,102 @@ nav{
 .photos{
     width: 4em;
 }
+
+
+/* section hero */
+
+.sechero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25em;
+    margin-top: 2.8em;
+    background-image: url(/images/image1.png);
+    color: #070707;
+    border-radius: 1em;
+    background-repeat: no-repeat;
+       
+}
+
+.secherodiv1 h1{
+    font-size: 55px;
+}
+.secherodiv1 h2{
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: circle;
+}
+
+.herodiv3{
+    font-weight: 800;
+}
+.secherodiv4 button{
+    padding: 5px 15px;
+    border: none;
+    margin-right: 15px;
+    background-color: rgb(115, 115, 246);
+    color: #eeefef;
+    border-radius: 0.5em;
+
+}
+
+.secherodiv4 button a{
+    color: white;
+    font-size: larger;
+}
+
+/* statistique */
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+/* comment ça marche */
+
+.sec2{
+    block-size: 500px;
+}
+ /* categories de services */
+
+ .height{
+    height: 15em;
+ }
+
+ .service-card{
+    transition: 0.3s;
+    border-radius: 20pxp;
+ }
+
+ .service-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+ }
+
+
+ /* temoignage */
+
+
+
+
+
+
+
+
+
+ #testimonials img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #2a5298;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #ebbf13;
+}
+
 
 
