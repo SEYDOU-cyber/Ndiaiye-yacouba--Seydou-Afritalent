@@ -15,22 +15,25 @@ rel="stylesheet">
 <!-- Le contenu de la page sera ajoute ici -->
  <!-- NAVBAR -->
  <header>
-    <div>
-            <nav class="container-fluid">
-                <h1><img src="images/WhatsApp Image 2026-05-24 at 14.20.33.jpeg" class="photos" alt=""></h1>
-            
-                <div  class="headdiv2">
-                    <a href="index.html" class="active">Accueil</a>
-                    <a href="freelances.html" class="active">Freelances</a>
-                    <a href="tarifs.html" class="active">Tarifs</a>
-                    <a href="about.html" class="active">About</a>
-                    <a href="contact.html" class="active">Contact</a>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/WhatsApp Image 2026-05-24 at 14.20.33.jpeg" class="photos" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="freelances.html" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
     </div>
-    <div class="">
-        <a href="index.html">Rejoindre</a>
-        </div>
+  </div>
+</nav>
+
 </header>
 
  <!-- HERO -->
@@ -43,8 +46,8 @@ rel="stylesheet">
             </div>
 
             <div class="secherodiv4">
-                <button class="mb-4"><a href="">Je suis freelance</a></button>
-                <button class="mb-4"><a href="">Je cherche un freelance</a></button>
+                <button class="m-8 btn btn-primary ms-3"><a href="freelances.html">Je suis freelance</a></button>
+                <button class="m-8 btn btn-primary ms-3"><a href="tarifs.html">Je cherche un freelance</a></button>
             </div>
         </div>
         <!-- <div>
@@ -53,7 +56,7 @@ rel="stylesheet">
     </div>
   </section>
   <!-- STAT -->
-
+<div class="mt">
   <h1 class="text-center fw-bold mt-4">Nos statistiques</h1>
      <div class="stats">
         <div class="stat">
@@ -70,6 +73,7 @@ rel="stylesheet">
         </div>
         
      </div>
+</div>     
 
      
 
@@ -77,29 +81,29 @@ rel="stylesheet">
    <section class="container py-5 ">
     <h1 class="text-center fw-bold mb-5">Comment ça marche</h1>
     <div class="row g-4">
-        <div class="col-lg-8 bg-success-subtle p-5 rounded-4  shadow sec2 mb-2">
+        <div class="col-lg-8 bg-success-subtle p-5 rounded-3 shadow sec2 mb-2">
            <h1 class="fw-bold">1</h1>
-           <span><img src="images/icon R.jpg" alt=""><h3>créer un compte</h3></span>
+           <span><img src="images/icon R.jpg" alt="" class="rounded-circle"><h3>créer un compte</h3></span>
             
             <p class="text-muted">Inscriver vous rapidement et gratuitement.</p>
         </div>
 
-        <div class="col-lg-4 bg-primary-subtle text-white p-5 rounded-4 shadow sec2 mb-2">
+        <div class="col-lg-4 bg-primary-subtle text-white p-5 rounded-3 shadow sec2 mb-2">
            <h1 class="fw-bold  text-black">2</h1>
-           <span><img src="images/icon1.png" alt=""><h3 class="text-black">Publier une mission</h3></span>
+           <span><img src="images/icon1.png" alt="" class="rounded-circle"><h3 class="text-black">Publier une mission</h3></span>
             
             <p class="text-muted">Décrivez votre besoin en quelques clics.</p>
         </div>
 
-        <div class="col-lg-4 bg-info-subtle text-white p-5 rounded-4 shadow sec2 mb-2">
+        <div class="col-lg-4 bg-info-subtle text-white p-5 rounded-3 shadow sec2 mb-2">
            <h1 class="fw-bold  text-black">3</h1>
-           <span><img src="images/icon2.jpg" alt=""><h3 class="text-black">Trouver un talent</h3></span>
+           <span><img src="images/icon2.jpg" alt="" class="rounded-circle"><h3 class="text-black">Trouver un talent</h3></span>
             
             <p class="text-muted">Choisissez parmi les meilleurs freelances.</p>
         </div>
-        <div class="col-lg-8 bg-secondary-subtle p-5 rounded-4 shadow sec2 mb-2">
+        <div class="col-lg-8 bg-secondary-subtle p-5 rounded-3 shadow sec2 mb-2">
            <h1 class="fw-bold">4</h1>
-           <span><img src="images/icon3jpg.jpg" class="sec2img" alt=""><h3>collaborer</h3></span>
+           <span><img src="images/icon3jpg.jpg" class="sec2img rounded-circle" alt=""><h3>collaborer</h3></span>
             
             <p class="text-muted">Travailler éfficacement et en toute sécurité.</p>
         </div>
@@ -115,7 +119,7 @@ rel="stylesheet">
 
             <!-- carte 1 -->
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
                 <span><img src="images/dev web.png" alt=""><h3 class="fw-bold">Developpement web</h3></span>
                 <p class="text-muted">120 Freelances</p>
@@ -123,7 +127,7 @@ rel="stylesheet">
                 </div>
 
             <!-- carte 2 -->
-                <div  class="col-md-6 col-lg-3">
+                <div  class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
                 <span><img src="images/cat de service/icion 6.png" alt=""><h3 class="fw-bold">UI/UX Design</h3></span>               
                 <p class="text-muted">80 freelances</p>
@@ -131,7 +135,7 @@ rel="stylesheet">
                 </div>
 
            <!-- carte 3 -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
                 <span><img src="images/cat de service/marketing.png" alt=""><h3 class="fw-bold">Marketing digital</h3></span>               
                 <p class="text-muted">95 freelances</p>
@@ -139,7 +143,7 @@ rel="stylesheet">
                 </div>
 
             <!-- carte 4 -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
                 <span><img src="images/cat de service/icon 2.png" alt=""><h3 class="fw-bold">Data & IA</h3></span>              
                 <p class="text-muted">60 freelances</p>
@@ -147,7 +151,7 @@ rel="stylesheet">
                 </div>
 
             <!-- carte 5 -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
                 <span><img src="images/cat de service/icon 1.png" alt=""><h3 class="fw-bold">Rédaction Tech</h3></span>        
                 <p class="text-muted">70 freelances</p>
@@ -155,7 +159,7 @@ rel="stylesheet">
                 </div>
 
             <!-- carte 6 -->
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4"s>
                 <span><img src="images/cat de service/icon 3.png" alt=""><h3 class="fw-bold">DevOps & Cloud</h3></span>    
                 <p class="text-muted">50 freelances</p>
@@ -202,12 +206,7 @@ rel="stylesheet">
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+        
     </section>
 
 
@@ -270,6 +269,7 @@ rel="stylesheet">
         </p>
         <p> © 2026 AfriTalent. Tous droits réservés.</p>
     </footer> 
+    <button><a href=""></a>⬆</button>
 <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
