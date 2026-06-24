@@ -1,150 +1,214 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>AfriTalent — Accueil</title> 
-<!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- feuille de style--> 
-<link rel="stylesheet" href="css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent — freelance</title>
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- feuille de style-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
-<!-- Le contenu de la page sera ajoute ici -->
- <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/WhatsApp Image 2026-05-24 at 14.20.33.jpeg" class="photos" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-      <a href="freelances.html" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
-    </div>
-  </div>
-</nav>
- </header>
- <section>
- <h1></h1>
- <!-- barre de filtre -->
- <div>
-    <button>Tous</button>
-    <button>Développeur</button>
-    <button>Designer</button>
-    <button>Marketing</button>
- </div>
- 
-    <!-- profil1 -->
-</div>
-    <div>
-    
-        <img src="images/profil/profil 1.jpg" alt="">
-        <h2>Kaba Ndiaye</h2>
-        <h3>Développeuse</h3>
-        <p>Développeuse spécialiser en HTML, CSS, et JavaScript</p>
-        <p>200000 fcfa</p>
-        <span>⭐⭐⭐⭐☆</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
-        <!-- profil2 -->
-    <div>
-        <img src="images/profil/designer.jpg" alt="">
-        <h2>Isma Ndiaye</h2>
-        <h3>Designer graphique</h3>
-        <p>création de logos et affiches modernes.</p>
-        <p>Tarif : 90000 fcfa</p>
-        <span>⭐⭐⭐⭐⭐</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
+
+<body>
+    <!-- Le contenu de la page sera ajoute ici -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/copilot.png" class="photos" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="freelances.html" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
+                </div>
+            </div>
+            </div>
+            <button id="theme-toggle" class="bg-primary">🌑</button>
+            </div>
+        </nav>
+    </header>
+    <section class="container py-5 sectarif">
+        <h1 class="fw-bold text-center">CONSULTEZ NOS MEILLEURS AGENTS</h1>
+        <!-- barre de filtre -->
+        <div class="mt-4 mb-4">
+            <button class="rounded-3 bg-primary"><a href="#Tous" class="text-white">Tous</a></button>
+            <button class="rounded-3 bg-primary"><a href="#Développeur" class="text-white">Développeur</a></button>
+            <button class="rounded-3 bg-primary"><a href="#Designer" class="text-white">Designer</a></button>
+            <button class="rounded-3 bg-primary"><a href="#Marketing" class="text-white">Marketing</a></button>
+        </div>
+
+        <!-- profil1 -->
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/profil 1.jpg" alt="" class="imgfree rounded-3">
+                    <h2>Kaba Ndiaye</h2>
+                    <h3>Développeuse</h3>
+                    <p>Développeuse spécialiser en HTML, CSS, et JavaScript</p>
+                    <p>200000 fcfa</p>
+                    <span>⭐⭐⭐⭐☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
+            <!-- profil2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/designer.jpg" alt="" class="imgfree rounded-3">
+                    <h2 id="Designer">Isma Ndiaye</h2>
+                    <h3>Designer graphique</h3>
+                    <p>création de logos et affiches modernes.</p>
+                    <p>Tarif : 90000 fcfa</p>
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
             <!-- profil3 -->
-    <div>
-        <img src="images/profil/mar.jpg" alt="">
-        <h2>Demba Ndiaye</h2>
-        <h3>Marketing digital</h3>
-        <p>expert en publicité sur les réseaux sociaux.</p>
-        <p>Tarif : 250000 fcfa</p>
-        <span>⭐⭐⭐☆☆</span>
-        <button><a href="">voir le profil.</a></button>
-    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/mar2.png" alt="" class="imgfree rounded-3">
+                    <h2 id="Marketing">Demba Ndiaye</h2>
+                    <h3>Marketing digital</h3>
+                    <p>expert en publicité sur les réseaux sociaux.</p>
+                    <p>Tarif : 250000 fcfa</p>
+                    <span>⭐⭐⭐☆☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil.</a></button>
+                </div>
+            </div>
             <!-- profil4 -->
 
-     <div>
-        <img src="images/profil/profil8.jpg" alt="">
-        <h2>Momodou Ndiaye</h2>
-        <h3>Développeur mobile</h3>
-        <p>Application android et iOS modernes.</p>
-        <p>Tarif : 450000 fcfa</p>
-        <span>⭐⭐⭐⭐☆</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
-                <!-- profil5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/profil8.jpg" alt="" class="imgfree rounded-3">
+                    <h2>Momodou Ndiaye</h2>
+                    <h3>Développeur mobile</h3>
+                    <p>Application android et iOS modernes.</p>
+                    <p>Tarif : 450000 fcfa</p>
+                    <span>⭐⭐⭐⭐☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
+            <!-- profil5 -->
 
-    <div>
-        <img src="images/profil/d.jpg" alt="">
-        <h2>Mame Ndiaye</h2>
-        <h3>UI/UX Designer</h3>
-        <p>intetrfaces modernes et experiences utilisateurs.</p>
-        <p>Tarif : 100000 fcfa</p>
-        <span>⭐⭐⭐⭐☆</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
-            <!-- profil6 -->     
-    <div>
-        <img src="images/profil/redactrice.jpg" alt="">
-        <h2>Ndiaye Ndiaye</h2>
-        <h3>Rédactrice web</h3>
-        <p>Rédaction d'article optimiser SEO.</p>
-        <p>Tarif : 80000 fcfa</p>
-        <span>⭐⭐⭐⭐☆</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/designer2.jpg" alt="" class="imgfree rounded-3">
+                    <h2>Mame Ndiaye</h2>
+                    <h3>UI/UX Designer</h3>
+                    <p>intetrfaces modernes et experiences utilisateurs.</p>
+                    <p>Tarif : 100000 fcfa</p>
+                    <span>⭐⭐⭐⭐☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
+            <!-- profil6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/redactrice.jpg" alt="" class="imgfree rounded-3">
+                    <h2>Ndiaye Ndiaye</h2>
+                    <h3>Rédactrice web</h3>
+                    <p>Rédaction d'article optimiser SEO.</p>
+                    <p>Tarif : 80000 fcfa</p>
+                    <span>⭐⭐⭐⭐☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
             <!-- profil7 -->
-    <div>
-        <img src="images/profil/photo.jpg" alt="">
-        <h2>Samba Ndiaye</h2>
-        <h3>Photographe</h3>
-        <p>Photos professionnels et retouches.</p>
-        <p>Tarif : 40000 fcfa</p>
-        <span>⭐⭐⭐☆☆</span>
-        <button><a href="">voir le profil.</a></button>
-    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/photo.jpg" alt="" class="imgfree rounded-3">
+                    <h2>Samba Ndiaye</h2>
+                    <h3>Photographe</h3>
+                    <p>Photos professionnels et retouches.</p>
+                    <p>Tarif : 40000 fcfa</p>
+                    <span class="mb-4">⭐⭐⭐☆☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil.</a></button>
+                </div>
+            </div>
             <!-- profil8 -->
-    <div>
-        <img src="images/profil/profil3.jpg" alt="">
-        <h2>EL hadj Ndiaye</h2>
-        <h3>Développeur BACKEND</h3>
-        <p>Création D'API et géstion se bases de données.</p>
-        <p>Tarif : 600000 fcfa</p>
-        <span>⭐⭐⭐⭐⭐</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/profil3.jpg" alt="" class="imgfree rounded-3">
+                    <h2 id="Développeur">EL hadj Ndiaye</h2>
+                    <h3>Développeur BACKEND</h3>
+                    <p>Création D'API et géstion se bases de données.</p>
+                    <p>Tarif : 600000 fcfa</p>
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
             <!-- profil9 -->
-    <div>
-        <img src="images/profil/manager.jpg" alt="">
-        <h2>Awa Ndiaye</h2>
-        <h3>Community manager</h3>
-        <p>Gestion des reseaux sociaux et communication.</p>
-        <p>Tarif : 100000 fcfa</p>
-        <span>⭐⭐⭐⭐☆</span>
-        <button><a href="">voir le profil</a></button>
-    </div>
-</div>
- </section>
- <button><a href=""></a>⬆</button>
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!--script JavaScript --> 
-<script src="js/main.js"></script>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+                    <img src="images/profil/prophil9.png" alt="" class="imgfree rounded-3">
+                    <h2>Awa Ndiaye</h2>
+                    <h3>Community manager</h3>
+                    <p>Gestion des reseaux sociaux et communication.</p>
+                    <p>Tarif : 100000 fcfa</p>
+                    <span>⭐⭐⭐⭐☆</span>
+                    <button class="bg-primary rounded-3"><a href="" class="text-white">voir le profil</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+
+    <footer class="bg-primary-subtle text-black">
+        <div class="text-center mt-4">
+            <h3>Afritalent</h3>
+            <p class="text-muted mt-4">Plateformes de freelance en Afrique</p>
+        </div>
+        <div class="ulfooter">
+            <div class="text-center p-4 rounded-5">
+                <h4 class="text-center">Liens utiles</h4>
+                <ul class="mt-2">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">freelance</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="p-4 rounded-5">
+                <h4 class="text-center mb-">Ressources</h4>
+                <ul>
+                    <li><a href="">tik tok</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">youtube</a></li>
+                </ul>
+            </div>
+            <div class=" p-4 contact">
+                <h4>Contact</h4>
+                <div class="text-primary">
+                    <p>ndiayeyakhouba079@gmail.com</p>
+                </div>
+                <div class="text-primary">
+                    <i class="mt-2">Tel: 78 476 63 34</i>
+                    <i></i>
+                    <p class="mt-4">DAKAR, SENEGAL</p>
+                </div>
+            </div>
+        </div>
+        <p>
+        <h5 class="text-center" id="Tous">AfriTalent</h5>
+        </p>
+        <p class="text-center text-muted">© 2026 AfriTalent. Tous droits réservés.</p>
+    </footer>
+    <button id="backToTop" class="btn btn-primary">⬆</button>
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--script JavaScript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>

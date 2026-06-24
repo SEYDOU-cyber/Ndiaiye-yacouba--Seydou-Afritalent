@@ -1,118 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>AfriTalent — Accueil</title> 
-<!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!--feuille de style--> 
-<link rel="stylesheet" href="css/style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — tarifs</title>
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--feuille de style-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body> 
-<!-- Le contenu de la page sera ajoute ici -->
- <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/WhatsApp Image 2026-05-24 at 14.20.33.jpeg" class="photos" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-      <a href="freelances.html" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
-    </div>
-  </div>
-</nav>
- </header>
 
-<!-- section tarif -->
- <section>
-<h1></h1>
-<p></p>
-<!-- plan gratuit -->
- <div>
-<div>
-    <h2>Gratuit</h2>
-    <h3>0 fcfa/mois</h3>
-    <ul>
-        <li>accés limité aux freelances</li>
-        <li>creation de profil</li>
-        <li>Support prioritaire</li>
-        <li>Visibilité avancée</li>
-    </ul>
-    <button>Commencer</button>
-</div>
+<body>
+  <!-- Le contenu de la page sera ajoute ici -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/copilot.png" class="photos" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="freelances.html" class="btn btn-primary ms-3">Rejoindre AfriTalent</a>
+        </div>
+      </div>
+      </div>
+      <button id="theme-toggle" class="bg-primary">🌑</button>
+      </div>
+    </nav>
+  </header>
 
-<!-- plan pro -->
- 
- <div>
-    <h2>pro</h2>
-    <h3>15000fcfa/mois</h3>
-    <ul>
-       <li>Accés illimité aux freelances </li>
-       <li>Messagerie avancée</li>
-       <li>support prioritaire</li>
-       <li>publication illimitéé</li> 
-    </ul>
-    <button>choisir pro</button>
- </div>
+  <!-- section tarif -->
+  <section class="container py-5 sectarif">
+    <h1 class="fw-bold text-center mb-4">Nos Plans Tarifaires</h1>
+    <p class="text-muted text-center mb-4">Choisissez le plan qui vous convient le mieux.</p>
+    <!-- plan gratuit -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 text-center">
+        <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+          <h2 class="text-center text-primary f-4 fw-bold">Gratuit</h2>
+          <ul>
+            <li>accés limité aux freelances</li>
+            <li>creation de profil</li>
+            <li>Support prioritaire</li>
+            <li>Visibilité avancée</li>
+          </ul>
+          <h4 class="fw-bold">0 fcfa/mois</h4>
+          <button class="rounded-3 bg-primary-subtle text-black">Commencer</button>
+        </div>
+      </div>
 
- <!-- plan entreprise -->
- <div>
-    <h2>Entreprise</h2>
-    <h3>30000fcfa/mois</h3>
-    <ul>
-       <li>Géstion d'équipe</li>
-       <li>Support premium</li>
-       <li>Tableau de bord avancé</li>
-       <li>Recrutement rapide</li> 
-    </ul>
-    <button>Choisir Entreprise</button>
- </div>
- </div>
- </section>
+      <!-- plan pro -->
 
- <!-- FAQ -->
-  <section>
-    <h1>Question frequente.</h1>
-    <div>
-        <details>
-            <summary>Comment créer un compte ?</summary>
-            <p>Cliquer sur inscription et remplissez le formulaire.</p>
-        </details>
-        <details>
-            <summary>Les freelances sont-ils vérifiés ?</summary>
-            <p>OUI, chaque profil est vérifié avant validation.</p>
-        </details>
-        <details>
-            <summary>Puis-je changer de plan ?</summary>
-            <p>OUI, vous pouvez votre abonnement à tout moment.</p>
-        </details>
-        <details>
-            <summary>Comment contacter un freelance ?</summary>
-            <p></p>
-        </details>
-        <details>
-            <summary>Le paiement est-il sécurisé ?</summary>
-            <span>OUI, tous les paiementsont sécurisé</span>
-        </details>
+      <div class="col-md-6 col-lg-4 border-2">
+        <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+          <h2 class="text-center text-warning fw-bold">Pro</h2>
+          <ul>
+            <li>Accés illimité aux freelances </li>
+            <li>Messagerie avancée</li>
+            <li>support prioritaire</li>
+            <li>publication illimitéé</li>
+          </ul>
+          <h4 class="fw-bold">15000fcfa/mois</h4>
+          <button class="rounded-3 bg-warning">Choisir pro</button>
+        </div>
+      </div>
+
+      <!-- plan entreprise -->
+      <div class="col-md-6 col-lg-4 text-center">
+        <div class="card h-100 border-0 shadow-lg rounded-4 p-4 service-card mb-4">
+          <h2 class="text-center text-primary fw-bold">Entreprise</h2>
+          <ul>
+            <li>Géstion d'équipe</li>
+            <li>Support premium</li>
+            <li>Tableau de bord avancé</li>
+            <li>Recrutement rapide</li>
+          </ul>
+          <h4 class="fw-bold">40000fcfa/mois</h4>
+          <button class="rounded-3 bg-primary-subtle text-black">Choisir Entreprise</button>
+        </div>
+      </div>
     </div>
   </section>
-  <button><a href=""></a>⬆</button>
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!-- script JavaScript --> 
-<script src="js/main.js"></script>
+
+  <!-- FAQ -->
+  <section class="mb-4">
+    <h1 class="text-center fw-bold">Question frequente.</h1>
+    <div class="text-center">
+      <details class="form-label">
+        <summary class="form-select">Comment créer un compte ?</summary>
+        <p>Cliquer sur inscription et remplissez le formulaire.</p>
+      </details>
+      <details class="form-label">
+        <summary class="form-select">Les freelances sont-ils vérifiés ?</summary>
+        <p>OUI, chaque profil est vérifié avant validation.</p>
+      </details>
+      <details class="form-label">
+        <summary class="form-select">Puis-je changer de plan ?</summary>
+        <p>OUI, vous pouvez votre abonnement à tout moment.</p>
+      </details>
+      <details class="form-label">
+        <summary class="form-select">Comment contacter un freelance ?</summary>
+        <p></p>
+      </details>
+      <details class="form-label">
+        <summary class="form-select">Le paiement est-il sécurisé ?</summary>
+        <span>OUI, tous les paiementsont sécurisé</span>
+      </details>
+    </div>
+  </section>
+  <button id="backToTop" class="btn btn-primary">⬆</button>
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- script JavaScript -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>

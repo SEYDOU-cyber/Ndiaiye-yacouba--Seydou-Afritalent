@@ -2,9 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;700&display=swap');
 
-
-:root{
-    --primary-color: blue;
+:root {
+    --primary-color: rgb(45, 45, 202);
     --secondary-color: black;
     --light-color: white;
     --dark-color: black;
@@ -13,35 +12,44 @@
     --spacing: 20px;
 }
 
-
-body{
+body {
     font-family: var(--main-font);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--title-font)
 }
 
-body{
+body {
     background-color: var(--light-color);
     color: var(--secondary-color);
 }
 
-button{
+button {
     background-color: var(--primary-color);
+
     color: white;
 }
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.6;
 }
-img{
+
+img {
     max-width: 100%;
     display: block;
 
@@ -49,35 +57,37 @@ img{
 
 /* header */
 
-.container-fluid{
+.container-fluid {
     position: fixed;
     padding-bottom: 1.7em;
 }
-a{
+
+a {
     text-decoration: none;
     list-style: none;
     font-size: larger;
 }
-li{
+
+li {
     text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: row;
-     
+
 }
 
-.headdiv1{
+.headdiv1 {
     padding-bottom: 10em;
 }
 
-
-nav{
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     justify-content: flex-end;
     justify-content: space-around;
-    background-color: #f2f4f5;
+    background-color: white;
+    border-radius: 0.8em;
 }
 
 /* ul{
@@ -88,58 +98,89 @@ nav{
     text-align: end;
 } */
 
-.photos{
-    width: 8em;
+.photos {
+    width: 6.5em;
+
 }
 
 
 /* section hero */
 
-.sechero{
+
+
+.sechero {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 25em;
-    margin-top: 2.8em;
-    /* background-image: url(/images/image1.png); */
-    background: linear-gradient(to bottom, rgb(47, 74, 225), rgb(226, 231, 232));
-    color: #070707;
-    border-radius: 1em;
-    background-repeat: no-repeat;
-       
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90vh;
+    margin-top: 10em;
 }
 
-.secherodiv1 h1{
+.secherodiv1 h1 {
     font-size: 55px;
 }
-.secherodiv1 h2{
+
+.secherodiv1 h2 {
     font-size: 30px;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     list-style: circle;
 }
 
-.herodiv3{
+.herodiv3 {
     font-weight: 800;
+    margin-left: 8em;
+
 }
-.secherodiv4 button{
+
+.herodiv3h1 {
+    font-weight: 900;
+}
+
+.secherodiv4 button {
     padding: 5px 15px;
     border: none;
-    margin-right: 15px;
-    background-color: rgb(3, 3, 61);
+    margin-left: 8em;
+    background-color: rgb(12, 8, 61);
     color: #eeefef;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
+    margin-top: 4em;
 
 }
 
-.secherodiv4 button a{
+.secherodiv4 button a {
     color: white;
     font-size: larger;
 }
 
+.imghero {
+    max-width: 400px;
+    border-radius: 6em 4em 8em 2em;
+    margin-right: 4em;
+}
+
+/* button dark and light */
+
+.dark-mode {
+    background: black;
+    color: white;
+    padding-right: 0em;
+}
+
+
+
+
+
+.display {
+    display: flex;
+    flex-direction: row;
+
+}
+
 /* statistique */
 
-.stats{
+.stats {
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
@@ -147,59 +188,193 @@ nav{
     font-weight: bold;
 }
 
-.mt{
+.mt {
     margin-top: 1em;
-    background: #d7d9dc;
+    /* background: #d7d9dc; */
     height: 50vh;
     border-radius: 2em;
 }
 
-.stat{
+.stat {
     margin-top: 2em;
 }
+
 /* comment ça marche */
 
-.sec2{
-    block-size: 500px;
+.sec2 {
+    block-size: 460px;
 }
- /* categories de services */
 
- .height{
+
+/* categories de services */
+
+.height {
     height: 15em;
- }
+}
 
- .service-card{
+.service-card {
     transition: 0.3s;
     border-radius: 20pxp;
- }
+}
 
- .service-card:hover{
+.service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
- }
+}
 
 
- /* temoignage */
+/* temoignage */
 
 
-
-
-
-
-
-
-
- #testimonials img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 3px solid #2a5298;
+#testimonials img {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+    border: 3px solid #0d31e6b0;
 }
 
 .stars {
-  font-size: 1.2rem;
-  color: #ebbf13;
+    font-size: 1.2rem;
+    color: #ebbf13;
 }
 
 
 
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    /* caché par défaut */
+    z-index: 1000;
+    border-radius: 40%;
+    padding: 12px 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+#backToTop.show {
+    display: block;
+    opacity: 1;
+    background-color: #245edadd;
+}
+
+/* CTA */
+.btncta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+
+.btncta button {
+    border-radius: 5px;
+    background-color: rgb(45, 122, 230);
+    border: none;
+    padding: 2px;
+}
+
+/* Footer */
+.ulfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+.ulfooter .ulliens1 .ulliens2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* freelances */
+.imgfree {
+    max-width: 300px;
+    max-height: 170px;
+}
+
+/* contact */
+.contact {
+    border-radius: 2em;
+}
+
+.p- {
+    padding: 3.5em;
+    border-radius: 2em;
+}
+
+.mb {
+    padding-bottom: 10px;
+}
+
+
+
+/* Tarifs */
+.sectarif {
+    margin-top: 8em;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+}
+
+.aboutdiv1 {
+    max-width: 50%;
+}
+
+.aboutdiv2img {
+    width: 500px;
+    border-radius: 30% 50% 20%;
+}
+
+/* contact */
+.dis {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+/* about */
+
+.secNV {
+    height: 30em;
+}
+
+.NV {
+    gap: 5em;
+}
+
+.seccle {
+    margin-bottom: 5em;
+}
+
+.seccle h3 {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.cle12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+.cle34 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: end;
+
+}
