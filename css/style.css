@@ -80,6 +80,7 @@ li {
     padding-bottom: 10em;
 }
 
+
 nav {
     display: flex;
     flex-direction: row;
@@ -376,5 +377,5 @@ nav {
     justify-content: flex-end;
     justify-content: space-around;
     align-items: end;
-
 }
+

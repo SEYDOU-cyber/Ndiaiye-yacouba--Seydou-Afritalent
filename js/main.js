@@ -45,3 +45,45 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+//compteur qui s'annime aux scroll
+// Fonction d'animation
+  function animateCounter(element, target) {
+    let current = 0;
+    const increment = target / 100; // vitesse (200 étapes)
+
+    const update = () => {
+      current += increment;
+      if (current < target) {
+        element.textContent = "+" + Math.floor(current).toLocaleString();
+        requestAnimationFrame(update);
+      } else {
+        element.textContent = "+" + target.toLocaleString();
+      }
+    };
+    update();
+  }
+
+  // Récupérer les h3 existants
+  const counters = document.querySelectorAll(".stat h3");
+
+  // Extraire les nombres depuis le texte (+2500 → 2500)
+  counters.forEach(counter => {
+    const text = counter.textContent.replace(/\D/g, ""); // garde que les chiffres
+    counter.dataset.target = text; // stocke la valeur cible
+    counter.textContent = "0"; // démarre à 0
+  });
+
+ 
+  // Observer au scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = +el.dataset.target;
+        animateCounter(el, target);
+        observer.unobserve(el); // éviter de relancer
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
