@@ -87,3 +87,80 @@ document.addEventListener("DOMContentLoaded", function() {
   }, { threshold: 0.5 });
 
   counters.forEach(counter => observer.observe(counter));
+
+
+  //formulaire de contact 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  // Création du conteneur pour le message de succès
+  const successMsg = document.createElement("p");
+  successMsg.classList.add("text-success", "fw-bold", "mt-3");
+  successMsg.style.display = "none";
+  successMsg.textContent = "✅ Le message a été envoyé avec succès !";
+
+  // On insère le message juste après le bouton
+  const submitBtn = form.querySelector("button");
+  submitBtn.insertAdjacentElement("afterend", successMsg);
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    // Nom
+    const nom = form.querySelector("input[type=text]");
+    if (nom.value.trim() === "") {
+      showError(nom, "Le nom est requis");
+      valid = false;
+    } else {
+      clearError(nom);
+    }
+
+    // Email
+    const email = form.querySelector("input[type=email]");
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email.value)) {
+      showError(email, "Email invalide");
+      valid = false;
+    } else {
+      clearError(email);
+    }
+
+    // Message
+    const message = form.querySelector("textarea");
+    if (message.value.trim().length < 20) {
+      showError(message, "Le message doit contenir au moins 20 caractères");
+      valid = false;
+    } else {
+      clearError(message);
+    }
+
+    // Si tout est bon
+    if (valid) {
+      successMsg.style.display = "block"; // affiche sous le bouton
+      form.reset();
+    }
+  });
+
+  function showError(element, message) {
+    let error = element.nextElementSibling;
+    if (!error || !error.classList.contains("error")) {
+      error = document.createElement("small");
+      error.classList.add("error", "text-danger");
+      element.insertAdjacentElement("afterend", error);
+    }
+    error.textContent = message;
+  }
+
+  function clearError(element) {
+    let error = element.nextElementSibling;
+    if (error && error.classList.contains("error")) {
+      error.textContent = "";
+    }
+  }
+});
+
+
+
+  

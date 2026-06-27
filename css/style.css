@@ -295,8 +295,10 @@ nav {
 
 /* freelances */
 .imgfree {
-    max-width: 300px;
-    max-height: 170px;
+    max-width: 150px;
+    max-height: 110px;
+    margin-bottom: 1em;
+    margin-left: 1.5em;
 }
 
 /* contact */
