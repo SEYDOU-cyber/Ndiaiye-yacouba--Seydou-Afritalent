@@ -114,7 +114,7 @@ nav {
     justify-content: center;
     flex-direction: row;
     justify-content: space-around;
-    height: 90vh;
+    height: 75vh;
     margin-top: 10em;
 }
 
@@ -160,6 +160,12 @@ nav {
     border-radius: 6em 4em 8em 2em;
     margin-right: 4em;
 }
+.btnjj{
+    background-color: #0c2d56;
+    border: #153052;
+    margin-top: 2.2em;
+    border-radius: 0.8em;
+}
 
 /* button dark and light */
 
@@ -189,6 +195,10 @@ nav {
     font-weight: bold;
 }
 
+.stath2{
+    font-size: 15px;
+}
+
 .mt {
     margin-top: 1em;
     /* background: #d7d9dc; */
@@ -205,7 +215,9 @@ nav {
 .sec2 {
     block-size: 460px;
 }
-
+.num{
+    font-size: xx-large;
+}
 
 /* categories de services */
 
@@ -217,6 +229,9 @@ nav {
     transition: 0.3s;
     border-radius: 20pxp;
 }
+ .imgcat{
+    max-width: 130px;
+ }
 
 .service-card:hover {
     transform: translateY(-10px);
@@ -239,7 +254,9 @@ nav {
     color: #ebbf13;
 }
 
-
+.scrolled{
+    background-color: #1871e6;
+}
 
 
 
@@ -270,9 +287,15 @@ nav {
     margin-top: 2em;
 }
 
+.ctaa{
+    border: solid,#1871e6;
+    background-color: #1871e6;
+    border-radius: 0.3em;
+}
+
 .btncta button {
     border-radius: 5px;
-    background-color: rgb(45, 122, 230);
+    background-color: rgb(78, 147, 243);
     border: none;
     padding: 2px;
 }
@@ -338,17 +361,26 @@ nav {
 }
 
 /* contact */
-.dis {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+.mc{
+    margin-top: 10em;
+}
+/* google maps */
+.frame{
+    height: 17em;
 }
 
 
-/* about */
+/* About */
 
+.aboutdiv1{
+    margin-left: 15px;
+}
+
+/* taille de noe valeur */
 .secNV {
-    height: 30em;
+    height: 35em;
+    margin-bottom: 3em;
+    padding-top: 1em;
 }
 
 .NV {
@@ -379,5 +411,21 @@ nav {
     justify-content: flex-end;
     justify-content: space-around;
     align-items: end;
+}
+/* le titre */
+.cn{
+    margin-top: 7em;
+    font-weight: bold;
+}
+.cn p{
+    color: #514f4f;
+}
+/* la taille du div  */
+.aboutp{
+    height: 25em;
+}
+/* la longueur du div */
+.aboutpp{
+    width: 35em;
 }
 
